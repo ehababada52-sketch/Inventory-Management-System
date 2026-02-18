@@ -22,3 +22,13 @@ This project is currently under development. Core functionalities are implemente
 
 ## Author
 Ehab Abada
+## ascreen shots
+
+### Login Screen
+![Login](screenshots/login.png)
+
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Product Management
+![Products](screenshots/products.png)
