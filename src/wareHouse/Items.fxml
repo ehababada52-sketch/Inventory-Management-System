@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="624.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wareHouse.ItemsController">
+    <stylesheets>
+        <URL value="@items.css" />
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="638.0" fitWidth="967.0" layoutX="-3.0" layoutY="-6.0">
+            <image>
+                <Image url="@../Joie_%20Blue_%20And%20yes,%20various%20shades%20of%20it_.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="T_item" alignment="CENTER" layoutX="282.0" layoutY="34.0" prefHeight="35.0" prefWidth="200.0" styleClass="header-title" stylesheets="@items.css" text="إدارة المنتجات" textAlignment="CENTER" textFill="#fcfafa">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Pane layoutX="693.0" layoutY="35.0" prefHeight="579.0" prefWidth="256.0" styleClass="form-card" stylesheets="@supplier.css">
+            <children>
+                <Button fx:id="item_add" layoutX="135.0" layoutY="461.0" mnemonicParsing="false" onAction="#addItem" prefHeight="41.0" prefWidth="105.0" styleClass="btn-add" stylesheets="@supplier.css" text="إضافة">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Button>
+                <Button fx:id="item_update" alignment="CENTER" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" onAction="#updateItem" prefHeight="41.0" prefWidth="105.0" styleClass="btn-update" stylesheets="@supplier.css" text="تعديل">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Button>
+                <Button fx:id="item_delete" layoutX="135.0" layoutY="520.0" mnemonicParsing="false" onAction="#deleteItem" prefHeight="41.0" prefWidth="105.0" styleClass="btn-delete" stylesheets="@supplier.css" text="حذف">
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </Button>
+                <Button fx:id="item_refresh" layoutX="14.0" layoutY="520.0" mnemonicParsing="false" onAction="#refreshItems" prefHeight="41.0" prefWidth="105.0" styleClass="btn-refresh" stylesheets="@supplier.css" text="تجديد">
+                    <effect>
+                        <InnerShadow />
+                    </effect>
+                </Button>
+                <TextField fx:id="nameField" alignment="CENTER_RIGHT" layoutX="46.0" layoutY="35.0" onKeyReleased="#txtitemname" prefHeight="39.0" prefWidth="165.0" promptText="اسم المنتج" styleClass="label" stylesheets="@items.css" />
+                <TextField fx:id="typeField" alignment="CENTER_RIGHT" layoutX="46.0" layoutY="105.0" onKeyReleased="#txtitemtyep" prefHeight="39.0" prefWidth="165.0" promptText="النوع" styleClass="label" stylesheets="@items.css" />
+                <TextField fx:id="quantityField" alignment="CENTER_RIGHT" layoutX="46.0" layoutY="175.0" onKeyReleased="#txtitemtquantity" onMouseEntered="#txtitemtyep" prefHeight="39.0" prefWidth="165.0" promptText="الكمية" styleClass="label" stylesheets="@items.css" />
+                <TextField fx:id="priceField" alignment="CENTER_RIGHT" layoutX="46.0" layoutY="245.0" onKeyReleased="#txtitemtprice" prefHeight="39.0" prefWidth="165.0" promptText="سعر الوحدة" styleClass="label" stylesheets="@items.css" />
+                <ComboBox fx:id="statusCombo" layoutX="46.0" layoutY="395.0" onAction="#txtitemtstatus" prefHeight="47.0" prefWidth="165.0" promptText="الحالة" styleClass="combo-box" stylesheets="@items.css" />
+                <ComboBox fx:id="supplierCombo" layoutX="46.0" layoutY="315.0" onAction="#txtitemtsupplier" prefHeight="47.0" prefWidth="165.0" promptText="اسم المورد" styleClass="combo-box" stylesheets="@items.css" />
+                <Label fx:id="lbname" layoutX="46.0" layoutY="10.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbtype" layoutX="46.0" layoutY="80.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbquantity" layoutX="46.0" layoutY="150.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbprice" layoutX="46.0" layoutY="220.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbsupplier" layoutX="46.0" layoutY="290.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbstatus" layoutX="46.0" layoutY="370.0" prefHeight="17.0" prefWidth="200.0" textFill="RED">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="42.0" layoutY="34.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../backward.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Bloom threshold="0.5" />
+            </effect>
+        </ImageView>
+        <TextField fx:id="txtSearch" alignment="CENTER_RIGHT" layoutX="29.0" layoutY="108.0" onKeyReleased="#searchItems" prefHeight="39.0" prefWidth="627.0" promptText="محرر البحث" styleClass="search-field" stylesheets="@items.css" />
+        <TableView fx:id="tableItems" layoutX="15.0" layoutY="165.0" onMouseClicked="#loadSelected" prefHeight="445.0" prefWidth="651.0" stylesheets="@items.css">
+            <columns>
+                <TableColumn fx:id="colStatus" minWidth="0.0" prefWidth="82.0" text="الحالة" />
+                <TableColumn fx:id="colsupplier_name" prefWidth="93.0" text="اسم المورد" />
+                <TableColumn fx:id="colPrice" prefWidth="83.0" text="سعر الوحدة" />
+                <TableColumn fx:id="colQuantity" prefWidth="84.0" text="الكمية" />
+                <TableColumn fx:id="colType" prefWidth="99.0" text="النوع" />
+                <TableColumn fx:id="colName" prefWidth="120.0" text="اسم المنتج" />
+                <TableColumn fx:id="colId" minWidth="0.0" prefWidth="86.0" text="رقم المنتج" />
+            </columns>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </TableView>
+    </children>
+</AnchorPane>

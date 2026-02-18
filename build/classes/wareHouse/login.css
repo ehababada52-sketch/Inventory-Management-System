@@ -1,0 +1,65 @@
+.root {
+    -fx-font-family: "Cairo";
+}
+.btn-update {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #3f4a5a,
+        #6b7a8c
+        );
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 22;
+    -fx-padding: 10 22;
+    -fx-cursor: hand;
+}
+.login_card {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 20;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0.3, 0, 5);
+}
+
+.login_title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.input-field {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-text-fill: white;
+    -fx-highlight-fill: white;
+    -fx-highlight-text-fill: black;
+    -fx-prompt-text-fill: #ccc;
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+}
+
+.login_btn {
+    -fx-background-color: white;
+    -fx-text-fill: #3e1f92;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+    -fx-pref-width: 200;
+    -fx-cursor: hand;
+}
+.login_btn:hover {
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.6), 20, 0, 0, 0);
+}
+
+#lblError{
+    -fx-font-weight: 800;
+}
+
+/*
+.image-view {
+    -fx-cursor: hand;
+    -fx-opacity: 0.8;
+}
+.image-view:hover {
+    -fx-opacity: 1;
+}*/
