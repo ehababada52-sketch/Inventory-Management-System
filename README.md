@@ -32,3 +32,10 @@ Ehab Abada
 
 ### Product Management
 ![Products](screenshots/products.png)
+
+---
+
+## 🎥 Demo Video
+
+Watch the 3-minute project demo here:  
+👉 [Click to Watch the Video](https://youtu.be/6gd-gEnM1Rs?si=BoujjdETMGwZqwbo)
